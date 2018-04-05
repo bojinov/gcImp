@@ -89,6 +89,13 @@ print.gcImp <- function(gcImp, ...) {
   print(gcImp$method)
 }
 
+#' Convert Gaussian copula to mids
+#' 
+#' \code{gc.as.mids} converts a gcImp object into a "mira" format. 
+#' The mira format can then be used by the mice package to analyze imputed data.
+#' 
+#' @param out A gcImp calss object, usually the output from \code{gcImp}
+#' @return An object of class "mira," see ?mice::mira for help.
 #' @export
 gc.as.mids <- function(out) {
   imp.data <- 
@@ -138,16 +145,6 @@ gc.as.mids <- function(out) {
   class(out) <- "mids"
   return(out)
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
