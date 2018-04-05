@@ -76,4 +76,8 @@ coef(fit)
 fit <- with(imp, lm(V1 ~ V2))
 est <- mice::pool(fit)
 summary(est)
+# For version of mice > 2.6 we can also plot using the lattice package
+\dontrun{
+lattice::densityplot(imp)
+lattice::bwplot(imp)}
 }

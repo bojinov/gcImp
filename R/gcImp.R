@@ -63,6 +63,10 @@
 #' fit <- with(imp, lm(V1 ~ V2))
 #' est <- mice::pool(fit)
 #' summary(est)
+#' # For version of mice > 2.6 we can also plot using the lattice package
+#' \dontrun{
+#' lattice::densityplot(imp)
+#' lattice::bwplot(imp)}
 gcImp <- function(dt, m = 20, burn = 300, nsamp = 1000, ...){
   # Sample the posterior
   out <- sbgcop::sbgcop.mcmc(dt, nsamp = nsamp, ...)
