@@ -5,6 +5,7 @@ sbgcop package. The package can also convert the output to allow for
 seamless integration with the mice package, which can be used to analyze the 
 multiple imputed data sets.
 
+```r
 # Install using devtools
 library(devtools)
 devtools::install_github("bojinov/gcImp")
@@ -49,3 +50,4 @@ est <- mice::pool(fit)
 summary(est)
 # Plot the imputed against the observed
 mice::densityplot(imp)
+'''
