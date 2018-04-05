@@ -1,0 +1,15 @@
+Package: gcImp
+Title: Generate multiple imputations using a Gaussian copula approach
+Version: 1.0.0
+Authors@R: person("Iavor", "Bojinov", email = "iav.bojinov@gmail.com", role = c("aut", "cre"))
+Description: This package generates multiple imputations using Peter Hoff's
+    sbgcop package. The package can also convert the output to allow for 
+    seamless integration with the mice package, which can be used to analyze the 
+    multiple imputed data sets.
+Depends: R (>= 3.4.4)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: sbgcop (>= 0.975),
+    mice (>= 2.30)
+RoxygenNote: 6.0.1
