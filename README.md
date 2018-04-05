@@ -1,4 +1,4 @@
-# gImp
+# gcImp
 An R package for generating multiple imputations using a Gaussian copula
 This package generates multiple imputations using Peter Hoff's
 sbgcop package. The package can also convert the output to allow for 
@@ -50,4 +50,4 @@ est <- mice::pool(fit)
 summary(est)
 # Plot the imputed against the observed
 mice::densityplot(imp)
-'''
+
